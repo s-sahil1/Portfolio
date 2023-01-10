@@ -32,6 +32,7 @@ body {
 
 .header {
     position: fixed;
+    z-index: 2;
     top: 0;
     width: 90%;
     display: flex;
@@ -277,6 +278,17 @@ body {
     color: white;
 }
 
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1s;
+}
+
+.tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 @media screen and (max-width: 800px) {
 
 
@@ -286,19 +298,20 @@ body {
         border-radius: 20px;
     }
 
-    .intro{
+    .intro {
         display: block;
     }
 
     .front-back {
         display: block;
+        margin: auto;
     }
 
-    .project-app{
+    .project-app {
         display: block;
     }
 
-    .project-app>div{
+    .project-app>div {
         margin-bottom: 1rem;
     }
 
@@ -307,13 +320,14 @@ body {
         background-color: black;
         font-family: 'Bakbak One', cursive;
         font-size: 1.5rem;
-    
+
     }
-    .services-list{
+
+    .services-list {
         align-items: center;
     }
 
-    .header{
+    .header {
         font-size: 2rem;
         justify-content: space-between;
     }
@@ -360,5 +374,5 @@ body {
         box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     }
 
-    
+
 }
