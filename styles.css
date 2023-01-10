@@ -45,6 +45,36 @@ body {
     padding-bottom: 5px;
 }
 
+.burger {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: #daf8e3;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+.main-nav.show .line1 {
+    transform: translate(-10px) rotate(45deg) translate(15px);
+}
+
+.main-nav.show .line2 {
+    opacity: 0;
+}
+
+.main-nav.show .line3 {
+    transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+
+.main-nav.show .nav-links {
+    transform: translateX(0%);
+}
+
 .h-links {
     text-decoration: none;
     color: #56AFFF;
@@ -136,7 +166,7 @@ body {
 }
 
 .full {
-    width: 400px;
+    height: 200px;
     border-radius: 20px;
 }
 
@@ -245,4 +275,90 @@ body {
 .contact>div>p>a {
     text-decoration: none;
     color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+
+    .project-list>div>img {
+        max-width: 95%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .intro{
+        display: block;
+    }
+
+    .front-back {
+        display: block;
+    }
+
+    .project-app{
+        display: block;
+    }
+
+    .project-app>div{
+        margin-bottom: 1rem;
+    }
+
+    .contact {
+        display: block;
+        background-color: black;
+        font-family: 'Bakbak One', cursive;
+        font-size: 1.5rem;
+    
+    }
+    .services-list{
+        align-items: center;
+    }
+
+    .header{
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+
+
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        height: 92vh;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #005582;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        height: 92vh;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: #005582;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    
 }
