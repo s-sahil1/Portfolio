@@ -357,14 +357,20 @@ body {
     .pic>img {
         width: 99%;
         border-radius: 50%;
-    }
-    
+        height : auto;
+        border: 2px solid #005582;
+    }    
     .pic {
         margin-top: 1rem;
         width: 70%;
-        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        background: none;
         border-radius: 50%;
         margin-left: 0;
+    }
+
+    .full{
+        width: 90%;
+        margin: 0;
     }
 }
 
