@@ -314,6 +314,7 @@ body {
 
     .project-app {
         display: block;
+        border-bottom: 2px solid white;
     }
 
     .project-app>div {
